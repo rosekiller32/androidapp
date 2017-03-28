@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:text="協同TRIZ產品開發" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="+" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="date" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="階段分析目標" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主持人" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="參與者" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主持人" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRIZ簡介：" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout6_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:text="TRIZ是解決問題的一種方法，其針對問題點的所在加以分析，並找出矛盾，再將矛盾分為物理矛盾與技術矛盾等，進而採取不同的解決方式。" />
+
+            <ImageView
+                android:id="@+id/imageView6_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/TRIZ" />
+
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="START" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

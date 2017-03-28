@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:text="會議記錄" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/textView1_1"
+            android:text="+" />
+
+        <TextView
+            android:id="@+id/textView1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button1"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="次數" />
+
+        <TextView
+            android:id="@+id/textView1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1_2"
+            android:layout_centerVertical="true"
+            android:text="次數編號" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="date" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="開會地點" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主持人" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="參與者" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ產品資訊重點摘要：" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:scrollbars="vertical"
+                android:maxLines="3"
+                android:inputType="textMultiLine" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ本次目標：" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:scrollbars="vertical"
+                android:maxLines="3"
+                android:inputType="textMultiLine" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button8_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="儲存" />
+
+        <Button
+            android:id="@+id/button8_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/button8_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=">" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="TRIZ應用介紹" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="一、矛盾矩陣" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/button2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1.1 - 40個發明原則" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/button2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1.2 - 39個工程係數" />
+                </TableRow>
+            </TableLayout>
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="技術矛盾應用" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="二、物理矛盾" />
+    <Button
+        android:id="@+id/button3_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="物理矛盾應用" />
+
+    <Button
+        android:id="@+id/button4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="三、整合分析" />
+    <Button
+        android:id="@+id/button4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="整合分析應用" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="技術矛盾統整表查詢" />
+        <Button
+            android:id="@+id/button5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TRIZ統整表查詢" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

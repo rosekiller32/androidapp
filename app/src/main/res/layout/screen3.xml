@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:text="初步構想" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="+" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="date" />
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="產品性質" />
+
+            <CheckBox
+                android:id="@+id/checkBox3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCheckboxClicked"
+                android:text="衍生性" />
+
+            <CheckBox
+                android:id="@+id/checkBox3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCheckboxClicked"
+                android:text="開發性" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="設計概念" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ結構分析" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ限制條件" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ預期成果" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ相關資訊的連結" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/layout9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ˊ相關資訊摘要" />
+
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:scrollbars="vertical"
+                android:maxLines="3"
+                android:inputType="textMultiLine" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button10_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="儲存" />
+
+            <Button
+                android:id="@+id/button10_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清除" />
+
+            <Button
+                android:id="@+id/button10_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TRIZ統整表" />
+
+            <Button
+                android:id="@+id/button10_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下一頁" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
